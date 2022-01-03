@@ -51,11 +51,41 @@ calcula de la forma siguiente:
 ![Ecuaciones Flujo Masico Salida](/img/ecuacionesFlujoMasico.png?raw=true "Ecuaciones Flujo Masico Salida")
 
 siendo K un parámetro de valor conocido. El valor de K es 0.5, expresado en unidades del sistema internacional.
+
+
 El caudal de entrada de líquido, Fin, es proporcionado por una bomba que es 
 manipulada por un controlador PI. El caudal de la bomba (Fin) es proporcional a 
 la tensión de control de la bomba (u) en el rango de valores entre 0 y 20 
 voltios. La relación constitutiva de la bomba es la siguiente:
+
+
 ![ecuacionesFlujoMasicoEntrante](/img/ecuacionesFlujoMasicoEntrada.png?raw=true "ecuacionesFlujoMasicoEntrante")
+
+Donde B es un parámetro cuyo valor es: B=0.3m^3 \/(s*V)
+
+El controlador PI está descrito mediante las ecuaciones siguientes:
+
+![ecuacionesControladorPI](/img/ecuacionesControladorPI.png?raw=true "ecuacionesControladorPI")
+
+donde los parámetros del controlador valen: kp = 5 V/m, kI = 10 m·s/V. La 
+evolución en el tiempo del valor de consigna para la altura de líquido en el 
+depósito, hsp, es conocida. Se muestra en la figura siguiente hsp frente al 
+tiempo, para el intervalo entre el instante inicial y t = 240 s.
+
+![AlturaDeReferencia](/img/AlturaDeReferencia.png?raw=true "AlturaDeReferencia")
+
+La altura inicial de líquido en el depósito es 0.5 m.
+1. Escriba las ecuaciones del modelo del sistema. El modelo debe describir la evolución de la altura de líquido (h) y de su valor de consigna (hsp), del caudal de entrada (Fin), de los caudales de salida (Fout,1, Fout,2), de las variables del controlador (e, u, I), y de las variables que describen las fases de las válvulas (av,1, av,2).
+2. Asigne la causalidad computacional. Indique cuántos grados de libertad tiene el modelo.
+
+3. Escriba el diagrama de flujo del algoritmo para la simulación de este modelo. Emplee el método de integración de Euler explícito. La condición de finalización de la simulación es que el tiempo alcance el valor 240 s.
+4. Programe el algoritmo anterior en lenguaje R y ejecute la simulación. Represente gráficamente frente al tiempo las variables siguientes: la altura de líquido, su valor de consigna, los flujos de entrada y salida, y las variables que describen las fases de las válvulas. Explique qué criterio ha seguido para escoger el tamaño del paso de integración.
+
+
+_Este enunciado se ha incluido a meros efectos de proporcionar un contexto  al
+codigo que se adjunta, este enunciado pertenece al trabajo practico de la 
+asignatura Métodos de simulación y modelado del Master en Ingeniería Informatica
+de la UNED_
 
 ## Funcionamiento ⚙️
 

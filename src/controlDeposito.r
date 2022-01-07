@@ -1,5 +1,5 @@
 t_fin <- 240 # Valor final del tiempo
-h     <- 0.01 # Tamaño del paso de integración
+h     <- 0.1 # Tamaño del paso de integración
 t_com <- 0.5 # Intervalo de comunicación
 # Parámetros
     A  <- 2

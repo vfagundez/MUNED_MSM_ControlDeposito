@@ -130,7 +130,7 @@ par( mfrow = c(2,1) )
 par( mai = c(0.4,1,0.8,0.2), cex = 1.2 )
 plot(t_plot, Fin_plot, lty = 1, type = "l",
 xlim = c(0,t_fin), ylim = c(0,5),
-yaxt = "n", xlab = "", ylab = "Fin [kg/s]", lwd = 2 )
+yaxt = "n", xlab = "", ylab = "Fin [m3/s]", lwd = 2 )
 axis(2, las = 2)
 minor.tick(nx = 2, ny = 5, tick.ratio = 0.5)
 abline(v = seq(0,t_fin,10*t_com), h = seq(0,5,0.2),
@@ -144,7 +144,7 @@ par( mfrow = c(2,1) )
 par( mai = c(0.4,1,0.8,0.2), cex = 1.2 )
 plot(t_plot, Fout1_plot, lty = 1, type = "l",
 xlim = c(0,t_fin), ylim = c(0,5),
-yaxt = "n", xlab = "", ylab = "Fout1 [kg/s]", lwd = 2 )
+yaxt = "n", xlab = "", ylab = "Fout1 [m3/s]", lwd = 2 )
 axis(2, las = 2)
 minor.tick(nx = 2, ny = 5, tick.ratio = 0.5)
 abline(v = seq(0,t_fin,10*t_com), h = seq(0,5,0.2),
@@ -156,7 +156,7 @@ title("Flujo de salida 1", cex = 1)
 par( mai = c(0.4,1,0.8,0.2), cex = 1.2 )
 plot(t_plot, Fout2_plot, lty = 1, type = "l",
 xlim = c(0,t_fin), ylim = c(0,5),
-yaxt = "n", xlab = "", ylab = "Fout2 [kg/s]", lwd = 2 )
+yaxt = "n", xlab = "", ylab = "Fout2 [m3/s]", lwd = 2 )
 axis(2, las = 2)
 minor.tick(nx = 2, ny = 5, tick.ratio = 0.5)
 abline(v = seq(0,t_fin,10*t_com), h = seq(0,5,0.2),

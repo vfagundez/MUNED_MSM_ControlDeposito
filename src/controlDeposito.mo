@@ -17,7 +17,6 @@ model ControlDeposito
   parameter SI.Height h2 = 1.5   "Altura de la salida 2";
   parameter Real      K  (unit="mm") =5          "Parametro de la tuberia";
   parameter Real      B  (unit="m3/(s.V)") =0.3  "Parametro de la bomba";
-  parameter Real      kf (unit="kg/(s.V)") = 100 "Parametro de la fuente";
   parameter Real      kI (unit="m.s/V") = 10 "Param. integral controlador";
   parameter Real      kP (unit="V/m") = 5    "Param. proporcional controlador";
   SI.Voltage          u          "Voltaje de salida del controlador";
